@@ -20,9 +20,8 @@
 		<!-- To Format the SQL quries -->
 		<property name="format_sql">true</property>
 
-
 		<!-- Mention annotated class -->
-
+		<mapping class="com.entities.Note"/>
 
 	</session-factory>
 </hibernate-configuration>
