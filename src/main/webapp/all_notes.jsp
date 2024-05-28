@@ -22,7 +22,7 @@
 			<div class="col-12">
 				<%
 				Session s = FactoryProvider.getFactory().openSession();
-				Query<Note> q = s.createQuery("from Note", Note.class);
+				Query<Note> q = s.createQuery("from Note order by addedDate desc", Note.class);
 				List<Note> list = q.list();
 				for (Note note : list) {
 				%>
@@ -33,7 +33,7 @@
 						<p class="card-text"><%=note.getContent() %></p>
 						<div class="container text-center ">
 						<a href="DeleteServlet?note_id=<%=note.getId() %>" class="btn btn-danger">Delete</a>
-						<a href="#" class="btn btn-primary">Update</a>
+						<a href="EditServlet?note_id=<%=note.getId() %>" class="btn btn-primary">Update</a>
 						</div>
 					</div>
 				</div>
