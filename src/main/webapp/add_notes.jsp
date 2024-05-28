@@ -17,7 +17,7 @@
 		<br>
 
 		<!-- This is Form tag for adding notes -->
-		<form action="SaveNoteServlet" method="post">
+		<form action="savenote" method="post">
 			<div class="form-group">
 				<label for="title">Title</label> <input type="text"
 					class="form-control" id="title" name="title"
