@@ -7,10 +7,10 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 <%@include file="all_js_css.jsp"%>
-<title>Note Taker</title>
+<title>Note Taker: Home Page</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid p-0 m-0">
 		<%@include file="navbar.jsp"%>
 	</div>
 
