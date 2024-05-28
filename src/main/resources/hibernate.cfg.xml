@@ -12,7 +12,7 @@
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
 		<!-- Drop and re-create the database schema on startup -->
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 
 		<!-- Display all executed SQL quries to console -->
 		<property name="show_sql">true</property>

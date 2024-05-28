@@ -1,6 +1,8 @@
 package com.entities;
 
 import java.util.Date;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,8 +15,12 @@ public class Note {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String title;
+	@Column(length=3000)
 	private String content;
 	private Date addedDate;
+	
+	public Note() {
+    }
 	
 	public Note(String title, String content, Date addedDate) {
 		super();
