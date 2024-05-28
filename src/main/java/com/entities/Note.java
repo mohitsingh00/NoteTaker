@@ -16,9 +16,8 @@ public class Note {
 	private String content;
 	private Date addedDate;
 	
-	public Note(int id, String title, String content, Date addedDate) {
+	public Note(String title, String content, Date addedDate) {
 		super();
-		this.id = id;
 		this.title = title;
 		this.content = content;
 		this.addedDate = addedDate;
