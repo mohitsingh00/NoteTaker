@@ -27,6 +27,7 @@
 
 		<!-- This is Form tag for adding notes -->
 		<form action="UpdateServlet" method="post">
+			<input value="<%=note.getId()%>" name="noteId" type="hidden">
 			<div class="form-group">
 				<label for="title">Title</label> <input type="text"
 					class="form-control" id="title" name="title"

@@ -6,15 +6,40 @@
 <meta charset="ISO-8859-1">
 <%@include file="all_js_css.jsp"%>
 <title>Add Notes</title>
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .form-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    .form-container h1 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+    .form-group label {
+        font-weight: bold;
+        color: #555;
+    }
+    .form-control {
+        margin-bottom: 15px;
+    }
+    .btn-custom {
+        margin-top: 20px;
+        width: 100px;
+    }
+</style>
 </head>
 <body>
 	<div class="container-fluid p-0 m-0">
 		<%@include file="navbar.jsp"%>
 	</div>
-	<br>
 	<div class="container form-container">
-		<h1>Please fill your note details</h1>
-		<br>
+		<h1 class="text-center">Please fill your note details</h1>
 
 		<!-- This is Form tag for adding notes -->
 		<form action="savenote" method="post">
