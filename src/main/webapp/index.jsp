@@ -10,14 +10,15 @@
 <title>Note Taker: Home Page</title>
 <style>
 body {
-	background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
 }
-
 .card {
 	margin-top: 50px;
 	padding: 40px;
 	border-radius: 15px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	background-color: #ffffff;
 }
 
@@ -32,6 +33,13 @@ body {
 
 .btn-custom {
 	margin-top: 20px;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	padding: 10px 0;
 }
 </style>
 </head>
@@ -48,5 +56,9 @@ body {
 				Here</a>
 		</div>
 	</div>
+	
+    <footer>
+        <%@include file="footer.jsp"%>
+    </footer>
 </body>
 </html>
