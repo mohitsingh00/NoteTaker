@@ -15,7 +15,7 @@ body {
     background-color: #f8f9fa;
 }
 .card {
-	margin-top: 50px;
+	margin-top: 70px;
 	padding: 40px;
 	border-radius: 15px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
